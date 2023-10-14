@@ -64,12 +64,60 @@
 //    return 0;
 //}
 
+
+//int main()
+//{
+//    int a = 0;
+//    while (scanf("%d", &a) != EOF)
+//    {
+//        while (a > 0)
+//        {
+//            printf("*");
+//            a--;
+//        }
+//            
+//    }
+//    return 0;
+//}
+
+//int main()
+//{
+//	int a = 1;
+//    while ( a++ ,a <= 100)
+//		{
+//		if (a % 3 == 0)
+//			printf("%d ",a);
+//		}
+//	return 0;
+//}
+
 int main()
 {
-    int a = 0;
-    char ch = '*';
-    while (scanf("%d", &a) != EOF)
-        ch *= a;
-    printf("%s\n", ch);
-        return 0;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int t = 0;
+	//ÊäÈë
+	scanf("%d %d %d", &a, &b, &c);
+	//ÅĞ¶Ï
+	if (a < b)
+	{
+		t = a;
+		a = b;
+		b = t;
+	}
+	if (a < c)
+	{
+		t = a;
+		a = c;
+		c = t;
+	}
+	if (b < c)
+	{
+		t = b;
+		b = c;
+		c = t;
+	}
+	printf("%d %d %d", a,b,c);
+	return 0;
 }
